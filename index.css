@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* start header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .navbar-brand i {
+    color: #35a22c;
+    font-size: 2.5rem;
+}
+.navbar-light .navbar-brand,
+#navbarPort  .nav-link {
+    color:white;
+}
+/* #navbarPort .nav-item.active .nav-link {
+    
+}     */.nav-link
+.navbar-light .navbar-brand {
+    font-size: 2rem;
+}
+#navbarPort .nav-item.active .nav-link {
+    color: #35a22c;
+}  
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+}  
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #35a22c;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #35a22c;
+    bottom: 0;
+    left: 0;
+    transform: 0.3s;
+}
+.navbar-light .navbar-nav  .nav-link:hover::after {
+    width: 100%;
+    background: #35a22c;
+}
+/* end header */
+
+/* start carousel */
+.carousel-inner {
+    height: 100vh;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-item::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.345);
+    position: absolute;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background: #35a22c;
+}
+.carousel-indicators li {
+    border: none;
+}
+/* end carousel */
+
+/* dtart projects */
+.projects nav {
+    justify-content: center;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #35a22c;
+}
+.nav-pills .nav-link {
+    color: black;
+    border: 1px solid black;
+}
+.nav-pills li {
+    margin: 0px 15px;
+}
+.item_project {
+    height: 500px;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.projects .card-body {
+    border: 1px solid white;
+    /* flex-grow: 1;
+    padding: 0; */
+
+    transition: 0.3s;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.projects .item_project:hover .card-body {
+    border: 1px solid #35a22c;
+}
+/* end projects */
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background: red;
+}
+@media only screen and (min-width:900px) {
+    .footer {
+        background: yellow;
+    }
+}
